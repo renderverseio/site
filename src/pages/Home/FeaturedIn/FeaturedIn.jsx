@@ -8,6 +8,7 @@ import Image9 from "../../../assets/images/backers/blockonomi_press.webp";
 
 import P1 from "../../../assets/images/backers/p1.png";
 import P2 from "../../../assets/images/backers/p2.png";
+import NEAR from "../../../assets/images/backers/p3.jpeg";
 
 import Wave from "react-wavify";
 
@@ -151,19 +152,98 @@ const Product = (props) => {
               <div
                 style={{
                   display: "flex",
-                  justifyContent: "space-between",
+                  justifyContent: "space-evenly",
                   alignItems: "center",
-                  columnGap: "3rem",
+                  width: "100%",
                 }}
               >
                 {data.map((d, i) => (
                   <div key={i}>
-                    <image src={d.img} alt="img" />
+                    <img
+                      style={{
+                        minHeight: "240px",
+                        maxHeight: "240px",
+                        minWidth: "240px",
+                        maxWidth: "240px",
+                        borderRadius: "2vh",
+                        margin: "1rem 0rem",
+                      }}
+                      src={d.img}
+                      alt="img"
+                    />
                     <h4>{d.name}</h4>
                     <h6>{d.role_1}</h6>
                     <h6>{d.role_2}</h6>
                   </div>
                 ))}
+              </div>
+            </div>
+
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "column",
+                alignItems: "center",
+                margin: "4rem 0 0 0",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  padding: "1rem 0",
+                  transform: "translateX(-2%)",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "1.35rem",
+                    padding: ".25rem .5rem",
+                  }}
+                  className="text-muted"
+                >
+                  OUR
+                </div>
+                <div
+                  style={{
+                    color: "#ffffff",
+                    fontSize: "1.35rem",
+                    fontWeight: "bold",
+                    padding: ".25rem .5rem",
+                    background: "#674C9F",
+                  }}
+                >
+                  BACKERS
+                </div>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-evenly",
+                  alignItems: "center",
+                  width: "100%",
+                }}
+              >
+                <div>
+                  <img
+                    style={{
+                      minHeight: "240px",
+                      maxHeight: "240px",
+                      minWidth: "240px",
+                      maxWidth: "240px",
+                      borderRadius: "2vh",
+                      margin: "1rem 0rem",
+                    }}
+                    src={NEAR}
+                    alt="img"
+                  />
+                  <h4>NEAR</h4>
+                  <h6>NEAR is the network for a world reimagined</h6>
+                  <h6>
+                    NEAR is a blockchain built to be simple, secure and
+                    scalable.
+                  </h6>
+                </div>
               </div>
             </div>
           </div>
