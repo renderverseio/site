@@ -12,7 +12,7 @@ import NEAR from "../../../assets/images/backers/p3.jpeg";
 
 import Wave from "react-wavify";
 
-import "./FeaturedIn.css";
+import css from "./FeaturedIn.css";
 
 const data = [
   {
@@ -150,21 +150,24 @@ const Product = (props) => {
                 </div>
               </div>
               <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-evenly",
-                  alignItems: "center",
-                  width: "100%",
-                }}
+                // style={{
+                //   display: "flex",
+                //   flexDirection: "column",
+                //   rowGap: "4rem",
+                //   justifyContent: "space-evenly",
+                //   alignItems: "center",
+                //   width: "100%",
+                // }}
+                className={"feature_row_1"}
               >
                 {data.map((d, i) => (
                   <div key={i}>
                     <img
                       style={{
-                        minHeight: "240px",
-                        maxHeight: "240px",
-                        minWidth: "240px",
-                        maxWidth: "240px",
+                        minHeight: "180px",
+                        maxHeight: "180px",
+                        minWidth: "180px",
+                        maxWidth: "180px",
                         borderRadius: "2vh",
                         margin: "1rem 0rem",
                       }}
@@ -227,10 +230,10 @@ const Product = (props) => {
                 <div>
                   <img
                     style={{
-                      minHeight: "240px",
-                      maxHeight: "240px",
-                      minWidth: "240px",
-                      maxWidth: "240px",
+                      minHeight: "180px",
+                      maxHeight: "180px",
+                      minWidth: "180px",
+                      maxWidth: "180px",
                       borderRadius: "2vh",
                       margin: "1rem 0rem",
                     }}
