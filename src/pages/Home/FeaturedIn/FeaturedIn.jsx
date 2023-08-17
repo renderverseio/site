@@ -12,7 +12,7 @@ import NEAR from "../../../assets/images/backers/p3.jpeg";
 
 import Wave from "react-wavify";
 
-import css from "./FeaturedIn.css";
+import "./FeaturedIn.css";
 
 const data = [
   {
