@@ -1,0 +1,77 @@
+.road_map_text_colors {
+  color: #02ffd1;
+  margin: 1rem 0;
+}
+
+.hide_border {
+  border-right: 2px dashed white;
+}
+
+@media screen and (max-width: 990px) {
+  .hide_border {
+    border: none;
+  }
+}
+
+.bg-img {
+  background: url("./assets/images/token_background.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+  position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+  .bg-img {
+    height: 100%;
+    width: 100%;
+    background: black;
+    position: relative;
+  }
+  .token_cards {
+    padding: 1rem 3rem;
+  }
+}
+
+.custom_grid {
+  display: grid;
+  margin: 0 2rem;
+}
+.item_point {
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.eco_system {
+  height: 50%;
+  width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .eco_system {
+    height: 100%;
+    width: 100%;
+  }
+  .logo {
+    padding: 1rem;
+    margin: 0 0.25rem;
+  }
+}
+
+.mission_mobile_row {
+  display: flex;
+}
+.mission_desk_row {
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+  .mission_mobile_row {
+    display: none;
+  }
+  .mission_desk_row {
+    display: flex;
+  }
+}
