@@ -4,7 +4,7 @@ import React from "react";
 
 const SlideButton = (props) => {
   const download = async () => {
-    window.open("https://chipper-yeot-d29d0d.netlify.app/dapp", "_blank");
+    window.open("https://renderverse.io", "_blank");
     // let a = document.createElement("a");
     // a.href = "https://chipper-yeot-d29d0d.netlify.app/dapp";
 
